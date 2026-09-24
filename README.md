@@ -66,6 +66,7 @@ demo3-frontend/
 - **Авто-refresh**: при ответе 401 фронт автоматически обновляет токен через
   `/auth/refresh` и повторяет запрос.
 - **Адрес бэкенда** вынесен в одну константу (в проде — в переменную окружения).
+<img width="947" height="1027" alt="image" src="https://github.com/user-attachments/assets/45edb7e4-7147-432f-91c6-5c522566e97c" />
 
 <img width="947" height="1027" alt="image" src="https://github.com/user-attachments/assets/682adef3-1c0d-4900-b41a-bdbff456e201" />
 
