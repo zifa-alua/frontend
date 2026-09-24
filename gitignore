@@ -1,0 +1,7 @@
+# IntelliJ
+.idea/
+*.iml
+
+# ОС
+.DS_Store
+Thumbs.db

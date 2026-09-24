@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BITLAB News</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ВЕРХНЕЕ МЕНЮ (навбар). Показывается только после входа -->
+  <header id="navbar" class="navbar hidden">
+    <div class="brand">📰 BITLAB News</div>
+    <nav>
+      <button id="nav-news" class="link">Лента</button>
+      <button id="nav-create" class="link hidden">Создать новость</button>
+    </nav>
+    <div class="user-box">
+      <span id="user-info"></span>
+      <button id="nav-logout" class="btn btn-ghost">Выход</button>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- ЭКРАН: ЛОГИН -->
+    <section id="view-login" class="view card">
+      <h1>Вход</h1>
+      <label>Email
+        <input id="login-email" type="email" placeholder="student@test.kz">
+      </label>
+      <label>Пароль
+        <input id="login-password" type="password" placeholder="••••••••">
+      </label>
+      <button id="btn-login" class="btn btn-primary">Войти</button>
+      <p class="muted">Нет аккаунта? <button id="go-register" class="link">Регистрация</button></p>
+      <p id="login-error" class="error"></p>
+    </section>
+
+    <!-- ЭКРАН: РЕГИСТРАЦИЯ -->
+    <section id="view-register" class="view card hidden">
+      <h1>Регистрация</h1>
+      <label>Email
+        <input id="reg-email" type="email" placeholder="student@test.kz">
+      </label>
+      <label>Пароль (минимум 8 символов)
+        <input id="reg-password" type="password" placeholder="••••••••">
+      </label>
+      <button id="btn-register" class="btn btn-primary">Зарегистрироваться</button>
+      <p class="muted">Уже есть аккаунт? <button id="go-login" class="link">Войти</button></p>
+      <p id="reg-error" class="error"></p>
+      <p id="reg-success" class="success"></p>
+    </section>
+
+    <!-- ЭКРАН: ЛЕНТА НОВОСТЕЙ -->
+    <section id="view-news" class="view hidden">
+      <h1>Новости</h1>
+      <div id="news-list" class="news-list"></div>
+      <p id="news-error" class="error"></p>
+    </section>
+
+    <!-- ЭКРАН: ОДНА НОВОСТЬ -->
+    <section id="view-news-detail" class="view card hidden">
+      <button id="back-to-news" class="link">← Назад к ленте</button>
+      <h1 id="detail-title"></h1>
+      <p class="muted" id="detail-meta"></p>
+      <p id="detail-content"></p>
+    </section>
+
+    <!-- ЭКРАН: СОЗДАНИЕ НОВОСТИ (только ADMIN) -->
+    <section id="view-create" class="view card hidden">
+      <h1>Новая новость</h1>
+      <label>Заголовок
+        <input id="create-title" type="text">
+      </label>
+      <label>Текст
+        <textarea id="create-content" rows="5"></textarea>
+      </label>
+      <label>Автор
+        <input id="create-author" type="text">
+      </label>
+      <button id="btn-create" class="btn btn-primary">Опубликовать</button>
+      <p id="create-error" class="error"></p>
+    </section>
+
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
