@@ -1,4 +1,4 @@
-# BITLAB News — Frontend (TASK-004)
+# BITLAB News — Frontend 
 
 Фронтенд для новостного сервиса BITLAB. Одностраничное приложение на **чистом
 HTML + CSS + JavaScript** (без фреймворков и сборки), подключается к бэкенду
